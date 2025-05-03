@@ -47,11 +47,11 @@ h2 {
     text-transform: uppercase;
 }
 
-h3 {
+/* h3 {
     color: #FFB22C;
     font-weight: 700;
     background-color: #000000;
-}
+} */
 
 button {
     background-color: #854836;
@@ -112,4 +112,46 @@ img {
 .selected-page {
     color: grey;
 
+}
+
+/* Testimonial block */
+.carousel .carousel-item {
+    padding: 2rem;
+}
+
+.carousel blockquote {
+    background: #f8f9fa;
+    /* Light gray background */
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+}
+
+.carousel blockquote::before {
+    content: "“";
+    font-size: 4rem;
+    color: #0d6efd;
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    line-height: 1;
+}
+
+.carousel blockquote::after {
+    content: "”";
+    font-size: 4rem;
+    color: #0d6efd;
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    line-height: 1;
+}
+
+.carousel .blockquote-footer {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: #6c757d;
 }
