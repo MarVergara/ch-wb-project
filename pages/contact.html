@@ -29,52 +29,99 @@
       </ul>
     </header>
   </div>
-  <main>
-    <h1>Contact the atelier</h1>
-    <h2>Ready to take your documentation to the next level?</h2>
-    <section>
-      <p>We are here to help you with all your documentation needs.</p>
-      <p>Whether you have a question about our services, need assistance with a project, or just want to say hello, feel
-        free to reach out!</p>
-      <p>Contact us today to discuss your project and see how we can help you achieve your documentation goals.</p>
-    </section>
-    <section>
-      <form action="submit" method="POST">
-        <label "">Name:</label>
-        <input type="text">
 
-        <label "">Email:</label>
-        <input type="email">
+  <div class="container">
+    <main>
+      <div class="py-5 text-center">
+        <h1 class="h2">Contact the atelier</h1>
+        <p class="lead">We are here to help you with all your documentation needs.</p>
 
-        <label "message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
 
-        <button type="submit">Submit request</button>
+      <div class="row g-5">
+        <div class="col-md-5 col-lg-4 order-md-last">
+          <h4 class="d-flex justify-content-between align-items-center mb-3">
+            <span class="text-primary">Services</span>
+            <span class="badge bg-primary rounded-pill">3</span>
+          </h4>
+          <ul class="list-group mb-3">
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Documentation</h6>
+                <small class="text-body-secondary">Let's build your docs.</small>
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Training</h6>
+                <small class="text-body-secondary">Empower your teams and customers.</small>
+              </div>
+            </li>
+            <li class="list-group-item d-flex justify-content-between lh-sm">
+              <div>
+                <h6 class="my-0">Consulting</h6>
+                <small class="text-body-secondary">We provide expert guidance.</small>
+              </div>
+            </li>
+          </ul>
 
+          <form class="card p-2">
+            <div class="input-group">
+              <input type="text" class="form-control">
+              <button type="submit" class="btn btn-secondary">Quote</button>
+            </div>
+          </form>
+        </div>
+        <div class="col-md-7 col-lg-8">
+          <h4 class="mb-3">Contact info</h4>
+          <form class="needs-validation" novalidate="">
+            <div class="row g-3">
+              <div class="col-sm-6">
+                <label for="firstName" class="form-label">First name</label>
+                <input type="text" class="form-control" id="firstName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Valid first name is required.
+                </div>
+              </div>
 
-        <!-- <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-        
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-        
-            <label for="subject">Subject:</label>
-            <input type="text" id="subject" name="subject" required>
-        
-            <label "">Message:</label>
+              <div class="col-sm-6">
+                <label for="lastName" class="form-label">Last name</label>
+                <input type="text" class="form-control" id="lastName" placeholder="" value="" required="">
+                <div class="invalid-feedback">
+                  Valid last name is required.
+                </div>
+              </div>
 
-            <textarea id="message" name="message" rows="5" required></textarea>
-        
-            <button type="submit">Send Message</button> -->
-    </section>
-    </form>
-  </main>
-  <footer>
-    <p>&copy; 2025 The TechDocs Atelier</p>
-  </footer>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
-    crossorigin="anonymous"></script>
+              <div class="col-12">
+                <label for="email" class="form-label">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="you@example.com">
+                <div class="invalid-feedback">
+                  Please enter a valid email address for shipping updates.
+                </div>
+              </div>
+
+              <div class="col-12">
+                <label for="address2" class="form-label">Company <span
+                    class="text-body-secondary">(Optional)</span></label>
+                <input type="text" class="form-control" id="address2" placeholder="Acme Inc">
+              </div>
+              <hr class="my-4">
+
+              <button class="w-100 btn btn-primary btn-lg" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+    </main>
+    <div class="container">
+      <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+        <div class="col-md-4 d-flex align-items-center">
+          <span class="mb-3 mb-md-0 text-body-secondary">© 2025 The TechDocs Atelier</span>
+        </div>
+      </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+      crossorigin="anonymous"></script>
 </body>
 
 </html>
