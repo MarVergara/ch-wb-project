@@ -1,127 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 
-body {
-    font-family: 'Montserrat', sans-serif;
-    background-color: #F7F7F7;
-}
-
-nav {
-    background-color: #FFB22C;
-    color: white;
-    padding: 1rem;
-}
-
-nav ul {
-    list-style: none;
-    display: flex;
-    justify-content: space-around;
-}
-
-nav ul li {
-    margin: 0 1rem;
-}
-
-nav ul li a {
-    color: white;
-    text-decoration: none;
-    font-weight: bold;
-}
-
-nav ul li a:hover {
-    text-decoration: underline;
-}
-
-nav ul li a.active {
-    text-decoration: underline;
-}
-
 h1 {
     color: #000000;
     font-size: 4rem;
 }
 
 h2 {
-    color: #854836;
+
     font-size: 1rem;
     font-weight: 700;
     text-transform: uppercase;
 }
 
-/* h3 {
-    color: #FFB22C;
-    font-weight: 700;
-    background-color: #000000;
-} */
-
-button {
-    background-color: #854836;
-    color: white;
-    border: none;
-    padding: 0.5rem 1rem;
-    cursor: pointer;
-    font-size: 1rem;
-}
-
-
-#h1_index {
+/* Navbar */
+.nav-pills .nav-link {
+    background-color: transparent;
     color: #000000;
-    font-size: 4rem;
-    font-family: Georgia, 'Times New Roman', Times, serif;
+    border-radius: 0.5rem;
+    transition: color 0.3s;
 }
 
-#h2_index {
-    color: #000;
-    font-size: 2rem;
-    font-weight: 700;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    font-style: italic;
+.nav-pills .nav-link:hover {
+    /* background-color: #FFB22C; */
+    color: #b1750d;
+    
 }
 
-.yellow-bg {
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
     background-color: #FFB22C;
-    color: white;
-    padding: 1rem;
-    margin: 1rem 0;
+    color: #000000;
+}
+  
+/* Primary button  */
+
+.btn-primary {
+    background-color: #FFB22C;
+    /* orange background */
+    color: #854836;
+    /* dark brown text */
+    border: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.yellow-bg p {
-    margin: 0;
-    color: #000;
-    font-weight: 500;
+.btn-primary:hover,
+.btn-primary:focus,
+.btn-primary:active {
+    background-color: #e6a919;
+    /* slightly darker orange on hover */
+    color: #6b3f29;
+    /* slightly darker brown text */
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
 }
 
 
-.services-block {
-    background-color: #F7F7F7;
-    color: #0000;
-    padding: 1rem;
-    margin: 1rem 0;
-}
-
-
-section {
-    border: 2px solid #000000;
-}
-
-
-img {
-    max-width: 50%;
-    height: auto;
-}
-
-.selected-page {
-    color: grey;
-
-}
-
-/* Testimonial block */
-.carousel .carousel-item {
-    padding: 2rem;
-}
+/* Carousel */
 
 .carousel blockquote {
     background: #f8f9fa;
-    /* Light gray background */
     border-radius: 1rem;
     padding: 2rem;
     max-width: 700px;
@@ -155,3 +93,6 @@ img {
     font-weight: bold;
     color: #6c757d;
 }
+
+
+
