@@ -1,0 +1,93 @@
+/* variables  */
+$primary-color: #FFB22C;
+$hover-color: #e6a919;
+$dark-text: #000000;
+$brown-text: #854836;
+$brown-hover: #6b3f29;
+$nav-hover-color: #b1750d;
+$carousel-bg: #f8f9fa;
+$carousel-blockquote-color: #0d6efd;
+$blockquote-footer-color: #6c757d;
+
+
+
+/* navbar  */
+.nav-pills {
+  .nav-link {
+    background-color: transparent;
+    color: $dark-text;
+    border-radius: 0.5rem;
+    transition: color 0.3s;
+
+    &:hover {
+      color: $nav-hover-color;
+    }
+
+    &.active,
+    &.show>& {
+      background-color: $primary-color;
+      color: $dark-text;
+    }
+  }
+}
+
+
+/* Primary button  */
+
+
+.btn-primary {
+  background-color: $primary-color;
+  color: $brown-text;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $hover-color;
+    color: $brown-hover;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+
+/* carousel  */
+
+.carousel {
+  blockquote {
+    background: $carousel-bg;
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    position: relative;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+
+    &::before {
+      content: "“";
+      font-size: 4rem;
+      color: $carousel-blockquote-color;
+      position: absolute;
+      top: 10px;
+      left: 20px;
+      line-height: 1;
+    }
+
+    &::after {
+      content: "”";
+      font-size: 4rem;
+      color: $carousel-blockquote-color;
+      position: absolute;
+      bottom: 10px;
+      right: 20px;
+      line-height: 1;
+    }
+  }
+  .blockquote-footer {
+    margin-top: 1rem;
+    font-weight: bold;
+    color: $blockquote-footer-color;
+  }
+}

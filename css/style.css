@@ -1,98 +1,67 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
-
-h1 {
-    color: #000000;
-    font-size: 4rem;
-}
-
-h2 {
-
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-/* Navbar */
+@charset "UTF-8";
+/* variables  */
+/* navbar  */
 .nav-pills .nav-link {
-    background-color: transparent;
-    color: #000000;
-    border-radius: 0.5rem;
-    transition: color 0.3s;
+  background-color: transparent;
+  color: #000000;
+  border-radius: 0.5rem;
+  transition: color 0.3s;
 }
-
 .nav-pills .nav-link:hover {
-    /* background-color: #FFB22C; */
-    color: #b1750d;
-    
+  color: #b1750d;
+}
+.nav-pills .nav-link.active, .nav-pills .nav-link.show > .nav-pills .nav-link {
+  background-color: #FFB22C;
+  color: #000000;
 }
 
-.nav-pills .nav-link.active,
-.nav-pills .show>.nav-link {
-    background-color: #FFB22C;
-    color: #000000;
-}
-  
 /* Primary button  */
-
 .btn-primary {
-    background-color: #FFB22C;
-    /* orange background */
-    color: #854836;
-    /* dark brown text */
-    border: none;
-    transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: #FFB22C;
+  color: #854836;
+  border: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.btn-primary:hover, .btn-primary:focus, .btn-primary:active {
+  background-color: #e6a919;
+  color: #6b3f29;
+  text-decoration: none;
+  outline: none;
+  box-shadow: none;
 }
 
-.btn-primary:hover,
-.btn-primary:focus,
-.btn-primary:active {
-    background-color: #e6a919;
-    /* slightly darker orange on hover */
-    color: #6b3f29;
-    /* slightly darker brown text */
-    text-decoration: none;
-    outline: none;
-    box-shadow: none;
-}
-
-
-/* Carousel */
-
+/* carousel  */
 .carousel blockquote {
-    background: #f8f9fa;
-    border-radius: 1rem;
-    padding: 2rem;
-    max-width: 700px;
-    margin: 0 auto;
-    position: relative;
-    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
+  background: #f8f9fa;
+  border-radius: 1rem;
+  padding: 2rem;
+  max-width: 700px;
+  margin: 0 auto;
+  position: relative;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.05);
 }
-
 .carousel blockquote::before {
-    content: "“";
-    font-size: 4rem;
-    color: #0d6efd;
-    position: absolute;
-    top: 10px;
-    left: 20px;
-    line-height: 1;
+  content: "“";
+  font-size: 4rem;
+  color: #0d6efd;
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  line-height: 1;
 }
-
 .carousel blockquote::after {
-    content: "”";
-    font-size: 4rem;
-    color: #0d6efd;
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
-    line-height: 1;
+  content: "”";
+  font-size: 4rem;
+  color: #0d6efd;
+  position: absolute;
+  bottom: 10px;
+  right: 20px;
+  line-height: 1;
 }
-
 .carousel .blockquote-footer {
-    margin-top: 1rem;
-    font-weight: bold;
-    color: #6c757d;
+  margin-top: 1rem;
+  font-weight: bold;
+  color: #6c757d;
 }
 
-
-
+/*# sourceMappingURL=style.css.map */
