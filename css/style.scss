@@ -12,7 +12,7 @@ $blockquote-footer-color: #6c757d;
 
 
 /* navbar  */
-.nav-pills {
+.nav-mainNavbar {
   .nav-link {
     background-color: transparent;
     color: $dark-text;
@@ -31,6 +31,11 @@ $blockquote-footer-color: #6c757d;
   }
 }
 
+@media (max-width: 767.98px) {
+  .navbar-brand {
+    font-size: 1.25rem;
+  }
+}
 
 /* Primary button  */
 
